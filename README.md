@@ -38,37 +38,68 @@ mern-blog/
 └── README.md               # Project documentation
 ```
 
-## Getting Started
+## Setup Instructions
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Follow the setup instructions in the `Week4-Assignment.md` file
-4. Complete the tasks outlined in the assignment
+1. Make sure you have Node.js (v18+) and MongoDB installed.
+2. Clone this repository:
+   ```
+   git clone <your-repo-url>
+   cd week-4-mern-integration-assignment-cecilgachie
+   ```
+3. Install server dependencies:
+   ```
+   cd server
+   npm install
+   ```
+4. Install client dependencies:
+   ```
+   cd ../client
+   npm install
+   ```
+5. Set up environment variables as described in the `.env.example` files in both `client` and `server` folders.
+6. Start the development servers:
+   ```
+   # In the server directory
+   npm run dev
 
-## Files Included
+   # In the client directory (in a new terminal)
+   npm run dev
+   ```
 
-- `Week4-Assignment.md`: Detailed assignment instructions
-- Starter code for both client and server:
-  - Basic project structure
-  - Configuration files
-  - Sample models and components
+## API Documentation
 
-## Requirements
+### Blog Posts
+- `GET /api/posts` - Get all blog posts
+- `GET /api/posts/:id` - Get a specific blog post
+- `POST /api/posts` - Create a new blog post
+- `PUT /api/posts/:id` - Update an existing blog post
+- `DELETE /api/posts/:id` - Delete a blog post
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- npm or yarn
-- Git
+### Categories
+- `GET /api/categories` - Get all categories
+- `POST /api/categories` - Create a new category
 
-## Submission
+> Add details about request/response bodies as you implement them.
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+## Features Implemented
+- [ ] RESTful API for blog posts and categories
+- [ ] CRUD operations for blog posts
+- [ ] React front-end with routing
+- [ ] User authentication (registration, login, protected routes)
+- [ ] Image uploads for blog posts
+- [ ] Pagination, search, and filtering
+- [ ] Comments on blog posts
+- [ ] Optimistic UI updates
+- [ ] Error and loading state handling
 
-1. Complete both the client and server portions of the application
-2. Implement all required API endpoints
-3. Create the necessary React components and hooks
-4. Document your API and setup process in the README.md
-5. Include screenshots of your working application
+> Mark the features you have completed with an `x`.
+
+## Screenshots
+
+> Add screenshots of your working application here. For example:
+
+![Home Page](screenshots/home.png)
+![Post View](screenshots/post.png)
 
 ## Resources
 
